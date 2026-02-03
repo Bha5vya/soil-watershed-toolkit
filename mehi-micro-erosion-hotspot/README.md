@@ -1,5 +1,8 @@
 # Micro Erosion Hotspot Index (MEHI)
 
+## GEE Link:
+https://code.earthengine.google.com/8bf4e7970fad5c65b1a6be6db49f1298
+
 ## Objective
 To identify micro-level soil erosion hotspot zones within the
 Mula–Mutha–Bhima watershed using a simple multi-factor index.
