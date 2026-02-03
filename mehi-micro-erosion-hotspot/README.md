@@ -41,5 +41,11 @@ Areas with high MEHI values (orange–red) represent zones where steeper slopes,
 Areas with low MEHI values (green) indicate comparatively stable terrain with better vegetation cover and lower likelihood of erosion.
 The index represents erosion susceptibility (potential), not actual measured soil loss, and is intended as a screening-level decision support tool.
 
+## Limitations
+MEHI represents relative erosion susceptibility and does not estimate actual soil loss. The index does not explicitly include land use or soil texture, which can influence erosion processes.
+
+## Future Work
+Future versions will integrate runoff accumulation, land use, and soil properties to refine erosion risk assessment and support conservation planning.
+
 ## Author
 Bhavya Singh
