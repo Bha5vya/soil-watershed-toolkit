@@ -18,12 +18,13 @@ Map.addLayer(aoi, {color: 'black'}, "Mula-Mutha-Bhima Catchment");
 var dem = ee.Image("USGS/SRTMGL1_003");
 var slope = ee.Terrain.slope(dem);
 
+
 // -----------------------------
 // Sentinel-2 NDVI
 // -----------------------------
 var s2 = ee.ImageCollection('COPERNICUS/S2_SR_HARMONIZED')
   .filterBounds(aoi)
-  .filterDate("2026-01-01", "2026-01-29")
+  .filterDate("2025-01-01", "2025-12-31")
   .filter(ee.Filter.lt("CLOUDY_PIXEL_PERCENTAGE", 20))
   .median();
 
@@ -35,7 +36,7 @@ var ndvi = s2.normalizedDifference(["B8", "B4"])
 // -----------------------------
 var rain = ee.ImageCollection("UCSB-CHG/CHIRPS/DAILY")
   .filterBounds(aoi)
-  .filterDate("2026-01-01", "2026-12-31")
+  .filterDate("2025-01-01", "2025-12-31")
   .sum()
   .rename("Rainfall");
 
