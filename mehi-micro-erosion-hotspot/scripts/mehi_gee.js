@@ -35,7 +35,7 @@ var ndvi = s2.normalizedDifference(["B8", "B4"])
 // -----------------------------
 var rain = ee.ImageCollection("UCSB-CHG/CHIRPS/DAILY")
   .filterBounds(aoi)
-  .filterDate("2024-01-01", "2024-12-31")
+  .filterDate("2026-01-01", "2026-12-31")
   .sum()
   .rename("Rainfall");
 
